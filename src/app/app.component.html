@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <app-tabla-alumno *ngIf="!cursos"></app-tabla-alumno>
+
+  <app-tabla-curso *ngIf="cursos"></app-tabla-curso>
+
+  <button class="btn btn-primary" (click)="handleCambio()">
+    Cambiar de tabla
+  </button>
+</div>
